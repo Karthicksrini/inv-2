@@ -6,9 +6,7 @@ import ShopIcon from '@material-ui/icons/Storefront';
 import GroupIcon from '@material-ui/icons/Group';
 import BrandingWatermarkIcon from '@material-ui/icons/BrandingWatermark';
 import {useState,useEffect} from "react";
-import {useHistory } from "react-router-dom";
 import axios from "axios";
-import jwt from "jsonwebtoken";
 const token= localStorage.getItem("token");
 function Dashboard(){
   
@@ -19,7 +17,6 @@ function Dashboard(){
    
     const array= ["store","brand","user"];
 
-    const history= useHistory();
   
     useEffect(()=>{
       //var decoded= jwt.decode(token);
@@ -110,7 +107,6 @@ function Dashboard(){
         <div className="pro_container">
         <div className="product">
             <div>
-            <h1></h1>
             <h3>Total Products</h3>
             </div>
             <div >
